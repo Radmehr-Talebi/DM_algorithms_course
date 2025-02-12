@@ -1,0 +1,45 @@
+Feature Selection using Wrapper Method
+
+Overview
+
+This project applies wrapper-based feature selection on the Adult dataset using k-Nearest Neighbors (kNN) with forward selection.
+
+Dataset
+
+The Adult dataset is used for income classification (>50K vs. <=50K).
+
+Preprocessing includes handling missing values, encoding categorical features, and shuffling.
+
+Methodology
+
+Preprocessing: Load and clean data, encode categorical variables, and convert labels (>50K → 1, <=50K → -1).
+
+Feature Selection:
+
+Start with an empty feature set S.
+
+Iteratively add the feature x from F that maximizes balanced accuracy using kNN.
+
+Stop when adding a new feature no longer improves accuracy.
+
+Evaluation: Report selected features and accuracy for both income classes.
+
+Dependencies
+
+Install required libraries:
+
+pip install numpy pandas scikit-learn
+
+Running the Code
+
+Load and preprocess the dataset.
+
+Run the forward selection algorithm.
+
+Evaluate the selected feature subset.
+
+Results
+
+The optimal feature subset is reported.
+
+Accuracy for each class is analyzed.
